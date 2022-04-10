@@ -1,0 +1,325 @@
+/*responsive*/
+@media only screen and (max-width:760px) {
+    .nav-container {
+        height: 3rem;
+        background-color: var(--main-color);
+        padding: 0.5rem 3rem;
+        align-items: unset;
+        padding-right: 0rem;
+
+    }
+
+    nav {
+        height: 100vh;
+        width: 65%;
+        border-radius: 10px 0px 0px 10px;
+        background-color: var(--green);
+        z-index: 100;
+        position: fixed;
+        right: -100%;
+        transition: 0.4s;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    nav ul li {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    #open-nav {
+        display: inline;
+        color: var(--white);
+        font-size: 1.7rem;
+        margin: auto 1rem;
+        cursor: pointer;
+    }
+
+    #close-nav {
+        display: unset;
+        color: var(--white);
+        font-size: 1.7rem;
+        position: absolute;
+        right: 24px;
+        top: 1rem;
+        cursor: pointer;
+
+    }
+
+    .open {
+        right: 0%;
+    }
+
+    /* main content */
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        /* padding: 0rem 2rem rem; */
+        padding: 2% 5% 1%;
+        height: 95vh;
+    }
+
+    .profile-img {
+        width: 17rem;
+        margin-bottom: 1rem;
+    }
+
+    .left-header {
+        padding-top: 2rem;
+    }
+
+    .left-header .intro-h1 {
+        font-size: 1.8rem;
+    }
+
+    .resume {
+        margin-top: 1.5rem;
+    }
+
+    .social-media {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-left: none;
+        border-bottom: 2px solid var(--green);
+        margin-top: 1rem;
+    }
+
+    .social-media .logo {
+        left: 0rem;
+        margin: 2.5rem 1rem 1rem;
+    }
+
+    .effect-1 {
+        top: 85%;
+        left: 14%;
+        opacity: 0.2;
+    }
+
+    .effect-2 {
+        top: 85%;
+        right: 14%;
+        opacity: 0.2;
+    }
+
+    /* About me */
+    .about-me-img {
+        display: none;
+    }
+
+    .about-me {
+        color: #515e49;
+    }
+
+    .about-me-info {
+        text-align: justify;
+    }
+
+    .about-me-section {
+        padding-top: 6%;
+    }
+
+    .about-me-h1::after{
+        content: " ";
+        width: 26%;
+        height: 4px;
+        background-color: #00ADB5;
+        position: absolute;
+        top: 47px;
+        left: 37.5%;
+    }
+
+    /* Timeline  */
+    .journey .h1-journey{
+        width: 50%;
+    }
+
+    .journey .h1-journey::after{
+        content: " ";
+        width: 40%;
+        left: 31%;
+        top: 55px;
+    }
+
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: var(--green);
+    }
+
+    .timeline{
+        width: 75%;
+    }
+
+    .timeline ul li {
+        width: 95%;
+        position: relative;
+        margin-bottom: 80px;
+        border-radius: 20px 0px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .timeline ul li::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: var(--green);
+        top: 0px;
+        transform: translate(-50%, -50%);
+        left: -40px;
+    }
+
+    .timeline ul li:nth-child(odd)::before {
+        transform: translate(-50%, -50%);
+        left: -45px;
+    }
+
+    .timeline ul li:nth-child(even)::before {
+        transform: translate(-50%, -50%);
+        left: -45px;
+    }
+    
+    .timeline-content .date {
+        position: absolute;
+        top: -30px;
+    }
+
+    .timeline ul li:hover::before {
+        background-color: aqua;
+    }
+
+    /* Skills */
+
+    .skills{
+        grid-template-columns: 0.9fr;
+        row-gap: 3rem;
+        column-gap: unset;
+        justify-content: center;
+    }
+
+    .skills-section .skills-h1::after{
+        content: " ";
+        width: 30%;
+        height: 4px;
+        background-color: #00ADB5;
+        position: absolute;
+        top: 45px;
+        left: 35%;
+    }
+
+    .skills .items{
+        height: 40vh;
+    }
+
+    .skills .items h2{
+        margin-top: 2.7rem;
+    }
+
+    .skills .items:hover{
+        transform: scale(1);
+        box-shadow: var(--green) 0px 5px 15px;
+    }
+
+    .projects-section{
+        height: 17vh;
+        flex-direction: column;
+    }
+
+    .h1-div{
+        margin-right: 0rem;
+
+    }
+
+    .h1-div h1{
+        font-size: 1.5rem;
+    }
+
+    .button-div{
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+    
+    .button-div button{
+        padding: 0.4rem 0.9rem;
+    }
+
+    .projects-section::before{
+        display: none;
+    }
+
+    .projects-section::after{
+        display: none;
+    }
+
+    .copyright{
+        height: 7vh;
+    }
+
+    .copyright p{
+        font-size: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-height:740px) and (max-width: 420px) {
+    .intro-h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile-img {
+        width: 14rem;
+    }
+
+    .social-media .logo {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 947px){
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+}
