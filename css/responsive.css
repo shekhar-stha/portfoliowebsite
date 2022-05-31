@@ -11,23 +11,24 @@
 
     nav {
         height: 100vh;
-        width: 65%;
+        width: 100%;
         border-radius: 10px 0px 0px 10px;
-        background-color: var(--green);
+        background-color: var(--main-color);
         z-index: 100;
         position: fixed;
         right: -100%;
-        transition: 0.4s;
+        transition: 0.5s;
     }
 
     nav ul {
         display: flex;
         flex-direction: column;
         margin: auto;
+        margin-top: 4.5rem;
     }
 
     nav ul li {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.3rem;
         font-size: 3rem;
         font-weight: 600;
     }
@@ -53,6 +54,7 @@
 
     .open {
         right: 0%;
+        top: 0%;
     }
 
     /* main content */
