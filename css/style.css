@@ -234,6 +234,7 @@ nav ul li:hover {
 
 .about-me-pic-div {
     position: relative;
+    width: 40%;
 }
 
 .about-me-pic-div:before {
@@ -257,6 +258,7 @@ nav ul li:hover {
 
 .about-me-info {
     align-items: center;
+    width: 60%;
 }
 
 /* journey */
