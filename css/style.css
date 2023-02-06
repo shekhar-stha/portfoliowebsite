@@ -9,6 +9,21 @@
     /* overflow: hidden; */
 }
 
+@media (max-width: 1200px) {
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-pic-div{
+        display: none !important;
+    }
+
+    .about-me-info{
+        width: 100% !important;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
